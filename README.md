@@ -38,4 +38,6 @@ src/
 
 ## Deployment
 
-Deployed via Netlify (GitHub → Netlify CI), falling back to Vercel if Netlify's free-tier limits are hit.
+Live at **https://landing-page-steel-gamma-50.vercel.app**
+
+Deployment target is Netlify per the project's intended pipeline (GitHub → Netlify CI); the initial deploy hit a `Forbidden` error from Netlify's API (consistent with a free-tier account limit), so this is currently deployed on Vercel instead, per a pre-approved fallback. Netlify can be retried later once the account issue is resolved.

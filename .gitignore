@@ -25,3 +25,8 @@ linkedin-post.md
 *.njsproj
 *.sln
 *.sw?
+
+# Local Netlify folder
+.netlify
+
+.vercel

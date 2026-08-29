@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://REPLACE_WITH_DEPLOYED_DOMAIN/sitemap.xml
+Sitemap: https://landing-page-steel-gamma-50.vercel.app/sitemap.xml
