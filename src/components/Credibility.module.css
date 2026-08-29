@@ -1,0 +1,85 @@
+.credibility {
+  padding-top: var(--space-7);
+  padding-bottom: var(--space-7);
+}
+
+.statRow {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+  margin-bottom: var(--space-8);
+}
+
+.statCard {
+  padding: var(--space-5);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-paper-raised);
+}
+
+.statValue {
+  font-family: var(--font-display);
+  font-size: var(--fs-display-md);
+  font-weight: 700;
+  color: var(--color-ink);
+  margin-bottom: var(--space-2);
+}
+
+.statLabel {
+  font-size: var(--fs-body-sm);
+  color: var(--color-ink-soft);
+  max-width: 22rem;
+}
+
+.stackRow {
+  padding-top: var(--space-7);
+  border-top: 1px solid var(--color-border);
+}
+
+.stackLabel {
+  font-size: var(--fs-label);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-ink-soft);
+  margin-bottom: var(--space-4);
+}
+
+.stackList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-5);
+}
+
+.stackPill {
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-border);
+  background: var(--color-paper);
+  font-size: var(--fs-body-sm);
+  font-weight: 600;
+  color: var(--color-ink-soft);
+}
+
+.githubLink {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--fs-body-sm);
+  font-weight: 700;
+  color: var(--color-ink);
+  border-bottom: 1.5px solid var(--color-ink);
+  padding-bottom: 2px;
+}
+
+.linkIcon {
+  width: 14px;
+  height: 14px;
+}
+
+@media (min-width: 640px) {
+  .statRow {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

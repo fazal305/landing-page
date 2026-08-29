@@ -1,0 +1,258 @@
+.hero {
+  padding-top: calc(var(--nav-height) + var(--space-4));
+  padding-bottom: var(--space-8);
+}
+
+.panel {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border-strong);
+  box-shadow: var(--shadow-card);
+  padding: var(--space-6) var(--space-5) var(--space-7);
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: var(--space-7);
+}
+
+.backdrop {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, var(--color-sky-top) 0%, var(--color-sky-bottom) 62%, var(--color-hill-light) 100%);
+  z-index: 0;
+}
+
+.hill {
+  position: absolute;
+  left: -10%;
+  right: -10%;
+  bottom: -6%;
+  height: 42%;
+  background: var(--color-hill);
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  opacity: 0.9;
+}
+
+.hillFar {
+  position: absolute;
+  left: -20%;
+  right: -5%;
+  bottom: 4%;
+  height: 26%;
+  background: var(--color-hill-light);
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  opacity: 0.55;
+}
+
+.doodle {
+  position: absolute;
+  z-index: 1;
+  width: 56px;
+  height: auto;
+  opacity: 0.85;
+}
+
+.doodleLime {
+  top: 8%;
+  right: 8%;
+  color: var(--color-lime);
+  width: 72px;
+}
+
+.doodleSun {
+  top: 15%;
+  right: 4%;
+  color: var(--color-sun);
+  width: 44px;
+  display: none;
+}
+
+.availabilityCard {
+  position: absolute;
+  top: var(--space-5);
+  left: var(--space-5);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  background: var(--color-paper-raised);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+  box-shadow: var(--shadow-card);
+  max-width: min(280px, calc(100% - 2 * var(--space-5)));
+}
+
+.avatarWrap {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid var(--color-border-strong);
+}
+
+.statusDot {
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--color-success);
+  border: 2px solid var(--color-paper-raised);
+}
+
+.availabilityLabel {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-success-text);
+  margin-bottom: 2px;
+}
+
+.availabilityName {
+  font-size: var(--fs-body-sm);
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.skillTags {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-9);
+}
+
+.floatTag {
+  font-size: var(--fs-body-sm);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 34rem;
+}
+
+.headline {
+  font-size: var(--fs-display-xl);
+  color: var(--color-paper-raised);
+  text-shadow: 0 2px 24px rgba(15, 30, 20, 0.25);
+  margin-bottom: var(--space-5);
+}
+
+.subhead {
+  font-size: var(--fs-body-lg);
+  color: var(--color-paper-raised);
+  opacity: 0.95;
+  max-width: 38rem;
+  margin-bottom: var(--space-6);
+}
+
+.ctaRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.ctaBtn {
+  font-size: var(--fs-body-sm);
+}
+
+.ctaIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.dock {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  gap: var(--space-2);
+  align-self: flex-end;
+  background: var(--color-paper-raised);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-pill);
+  padding: var(--space-2);
+  box-shadow: var(--shadow-card);
+}
+
+.dockLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: var(--color-ink);
+  transition: background-color var(--duration-fast) var(--ease-out);
+}
+
+.dockLink:hover {
+  background: var(--color-paper-deep);
+}
+
+.dockIcon {
+  width: 19px;
+  height: 19px;
+}
+
+@media (min-width: 640px) {
+  .doodleSun {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .panel {
+    min-height: 680px;
+    padding: var(--space-7) var(--space-8) var(--space-8);
+  }
+
+  .skillTags {
+    position: static;
+    margin-top: 0;
+  }
+
+  .floatTag {
+    position: absolute;
+    z-index: 2;
+  }
+
+  .tag0 {
+    top: 32%;
+    right: 6%;
+  }
+
+  .tag1 {
+    top: 46%;
+    right: 12%;
+  }
+
+  .tag2 {
+    top: 60%;
+    right: 5%;
+  }
+
+  .dock {
+    position: absolute;
+    bottom: var(--space-7);
+    right: var(--space-8);
+    align-self: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .doodle {
+    animation: none;
+  }
+}

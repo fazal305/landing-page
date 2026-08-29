@@ -1,0 +1,116 @@
+.grid {
+  margin-top: var(--space-8);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+}
+
+.card {
+  padding: var(--space-6);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-lg);
+  background: var(--color-paper-raised);
+  box-shadow: var(--shadow-card);
+  transition: transform var(--duration-base) var(--ease-out), box-shadow var(--duration-base) var(--ease-out);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.iconWrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-strong);
+  margin-bottom: var(--space-5);
+}
+
+.icon-sky {
+  background: var(--color-sky);
+  color: var(--color-on-sky);
+}
+
+.icon-lime {
+  background: var(--color-lime);
+  color: var(--color-on-lime);
+}
+
+.icon-coral {
+  background: var(--color-coral);
+  color: var(--color-on-coral);
+}
+
+.icon-sun {
+  background: var(--color-sun);
+  color: var(--color-on-sun);
+}
+
+.icon {
+  width: 26px;
+  height: 26px;
+}
+
+.name {
+  font-size: var(--fs-display-sm);
+  margin-bottom: var(--space-3);
+}
+
+.description {
+  margin-bottom: var(--space-5);
+}
+
+.metaList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  background: var(--color-paper);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-5);
+}
+
+.metaList dt {
+  font-size: var(--fs-label);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-ink-faint);
+  margin-bottom: 2px;
+}
+
+.metaList dd {
+  font-size: var(--fs-body-sm);
+  color: var(--color-ink-soft);
+}
+
+.tagList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.tag {
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-border);
+  font-size: var(--fs-label);
+  font-weight: 600;
+  color: var(--color-ink-soft);
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card:hover {
+    transform: none;
+  }
+}
