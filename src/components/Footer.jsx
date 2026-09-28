@@ -1,9 +1,9 @@
-import { site } from '../data/site'
-import { MailIcon, GithubIcon, LinkedinIcon } from './icons'
-import styles from './Footer.module.css'
+import { site } from "../data/site";
+import { MailIcon, GithubIcon, LinkedinIcon } from "./icons";
+import styles from "./Footer.module.css";
 
 export function Footer() {
-  const year = new Date().getFullYear()
+  const year = new Date().getFullYear();
 
   return (
     <footer className={styles.footer}>
@@ -11,7 +11,9 @@ export function Footer() {
         <div className={styles.top}>
           <div>
             <p className={styles.wordmark}>{site.brand}</p>
-            <p className={styles.tagline}>{site.title} — {site.location}</p>
+            <p className={styles.tagline}>
+              {site.title} — {site.location}
+            </p>
           </div>
 
           <nav aria-label="Footer">
@@ -28,7 +30,11 @@ export function Footer() {
 
           <ul className={styles.socialList}>
             <li>
-              <a href={`mailto:${site.email}`} className={styles.socialLink} aria-label={`Email ${site.name}`}>
+              <a
+                href={`mailto:${site.email}`}
+                className={styles.socialLink}
+                aria-label={`Email ${site.name}`}
+              >
                 <MailIcon className={styles.socialIcon} />
               </a>
             </li>
@@ -64,5 +70,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

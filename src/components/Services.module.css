@@ -11,7 +11,9 @@
   border-radius: var(--radius-lg);
   background: var(--color-paper-raised);
   box-shadow: var(--shadow-card);
-  transition: transform var(--duration-base) var(--ease-out), box-shadow var(--duration-base) var(--ease-out);
+  transition:
+    transform var(--duration-base) var(--ease-out),
+    box-shadow var(--duration-base) var(--ease-out);
 }
 
 .card:hover {

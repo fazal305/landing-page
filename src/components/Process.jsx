@@ -1,5 +1,5 @@
-import { processSteps } from '../data/process'
-import styles from './Process.module.css'
+import { processSteps } from "../data/process";
+import styles from "./Process.module.css";
 
 export function Process() {
   return (
@@ -7,8 +7,15 @@ export function Process() {
       <div className="container">
         <div className="section-heading">
           <p className="eyebrow">How I Work</p>
-          <h2 style={{ fontSize: 'var(--fs-display-md)', marginBottom: 'var(--space-4)' }}>What happens after you reach out</h2>
-          <p style={{ fontSize: 'var(--fs-body-lg)', maxWidth: '36rem' }}>
+          <h2
+            style={{
+              fontSize: "var(--fs-display-md)",
+              marginBottom: "var(--space-4)",
+            }}
+          >
+            What happens after you reach out
+          </h2>
+          <p style={{ fontSize: "var(--fs-body-lg)", maxWidth: "36rem" }}>
             No black-box handoff — here's what each stage actually looks like.
           </p>
         </div>
@@ -26,5 +33,5 @@ export function Process() {
         </ol>
       </div>
     </section>
-  )
+  );
 }

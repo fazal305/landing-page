@@ -1,6 +1,6 @@
-import { finalCta } from '../data/site'
-import { ArrowUpRightIcon, ArrowDownIcon, LoopDoodle } from './icons'
-import styles from './FinalCta.module.css'
+import { finalCta } from "../data/site";
+import { ArrowUpRightIcon, ArrowDownIcon, LoopDoodle } from "./icons";
+import styles from "./FinalCta.module.css";
 
 export function FinalCta() {
   return (
@@ -11,11 +11,17 @@ export function FinalCta() {
           <p className={`eyebrow ${styles.eyebrow}`}>{finalCta.eyebrow}</p>
           <h2 className={styles.headline}>{finalCta.headline}</h2>
           <div className={styles.ctaRow}>
-            <a href={finalCta.primaryCta.href} className={`btn btn-primary ${styles.btn}`}>
+            <a
+              href={finalCta.primaryCta.href}
+              className={`btn btn-primary ${styles.btn}`}
+            >
               {finalCta.primaryCta.label}
               <ArrowUpRightIcon className={styles.icon} />
             </a>
-            <a href={finalCta.secondaryCta.href} className={`btn btn-secondary ${styles.btn}`}>
+            <a
+              href={finalCta.secondaryCta.href}
+              className={`btn btn-secondary ${styles.btn}`}
+            >
               {finalCta.secondaryCta.label}
               <ArrowDownIcon className={styles.icon} />
             </a>
@@ -23,5 +29,5 @@ export function FinalCta() {
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -1,14 +1,14 @@
-import { Navigation } from './components/Navigation'
-import { Hero } from './components/Hero'
-import { Credibility } from './components/Credibility'
-import { Services } from './components/Services'
-import { Work } from './components/Work'
-import { Process } from './components/Process'
-import { About } from './components/About'
-import { Faq } from './components/Faq'
-import { FinalCta } from './components/FinalCta'
-import { Contact } from './components/Contact'
-import { Footer } from './components/Footer'
+import { Navigation } from "./components/Navigation";
+import { Hero } from "./components/Hero";
+import { Credibility } from "./components/Credibility";
+import { Services } from "./components/Services";
+import { Work } from "./components/Work";
+import { Process } from "./components/Process";
+import { About } from "./components/About";
+import { Faq } from "./components/Faq";
+import { FinalCta } from "./components/FinalCta";
+import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -31,7 +31,7 @@ function App() {
       </main>
       <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

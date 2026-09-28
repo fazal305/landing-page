@@ -1,6 +1,6 @@
-import { faqs } from '../data/faq'
-import { ArrowDownIcon } from './icons'
-import styles from './Faq.module.css'
+import { faqs } from "../data/faq";
+import { ArrowDownIcon } from "./icons";
+import styles from "./Faq.module.css";
 
 export function Faq() {
   return (
@@ -8,7 +8,7 @@ export function Faq() {
       <div className="container">
         <div className="section-heading">
           <p className="eyebrow">FAQ</p>
-          <h2 id="faq-heading" style={{ fontSize: 'var(--fs-display-md)' }}>
+          <h2 id="faq-heading" style={{ fontSize: "var(--fs-display-md)" }}>
             Questions clients actually ask
           </h2>
         </div>
@@ -26,5 +26,5 @@ export function Faq() {
         </div>
       </div>
     </section>
-  )
+  );
 }

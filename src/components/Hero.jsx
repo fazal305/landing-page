@@ -1,9 +1,17 @@
-import { heroCopy, heroSkillTags, site } from '../data/site'
-import profilePhoto from '../assets/profile-photo.jpg'
-import { ArrowUpRightIcon, ArrowDownIcon, MailIcon, GithubIcon, LinkedinIcon, LoopDoodle, SquiggleDoodle } from './icons'
-import styles from './Hero.module.css'
+import { heroCopy, heroSkillTags, site } from "../data/site";
+import profilePhoto from "../assets/profile-photo.jpg";
+import {
+  ArrowUpRightIcon,
+  ArrowDownIcon,
+  MailIcon,
+  GithubIcon,
+  LinkedinIcon,
+  LoopDoodle,
+  SquiggleDoodle,
+} from "./icons";
+import styles from "./Hero.module.css";
 
-const tagClassByIndex = ['tag0', 'tag1', 'tag2']
+const tagClassByIndex = ["tag0", "tag1", "tag2"];
 
 export function Hero() {
   return (
@@ -20,7 +28,13 @@ export function Hero() {
 
           <div className={styles.availabilityCard}>
             <span className={styles.avatarWrap}>
-              <img src={profilePhoto} alt="" className={styles.avatar} width="40" height="40" />
+              <img
+                src={profilePhoto}
+                alt=""
+                className={styles.avatar}
+                width="40"
+                height="40"
+              />
               <span className={styles.statusDot} aria-hidden="true" />
             </span>
             <div>
@@ -33,7 +47,10 @@ export function Hero() {
 
           <ul className={styles.skillTags} aria-hidden="true">
             {heroSkillTags.map((tag, i) => (
-              <li key={tag.label} className={`tag-pill tag-pill--${tag.variant} ${styles.floatTag} ${styles[tagClassByIndex[i]]}`}>
+              <li
+                key={tag.label}
+                className={`tag-pill tag-pill--${tag.variant} ${styles.floatTag} ${styles[tagClassByIndex[i]]}`}
+              >
                 {tag.label}
               </li>
             ))}
@@ -43,11 +60,17 @@ export function Hero() {
             <h1 className={styles.headline}>{heroCopy.headline}</h1>
             <p className={styles.subhead}>{heroCopy.subhead}</p>
             <div className={styles.ctaRow}>
-              <a href={heroCopy.primaryCta.href} className={`btn btn-primary ${styles.ctaBtn}`}>
+              <a
+                href={heroCopy.primaryCta.href}
+                className={`btn btn-primary ${styles.ctaBtn}`}
+              >
                 {heroCopy.primaryCta.label}
                 <ArrowUpRightIcon className={styles.ctaIcon} />
               </a>
-              <a href={heroCopy.secondaryCta.href} className={`btn btn-secondary ${styles.ctaBtn}`}>
+              <a
+                href={heroCopy.secondaryCta.href}
+                className={`btn btn-secondary ${styles.ctaBtn}`}
+              >
                 {heroCopy.secondaryCta.label}
                 <ArrowDownIcon className={styles.ctaIcon} />
               </a>
@@ -56,7 +79,11 @@ export function Hero() {
 
           <ul className={styles.dock} aria-label="Direct contact">
             <li>
-              <a href={`mailto:${site.email}`} className={styles.dockLink} aria-label={`Email ${site.name}`}>
+              <a
+                href={`mailto:${site.email}`}
+                className={styles.dockLink}
+                aria-label={`Email ${site.name}`}
+              >
                 <MailIcon className={styles.dockIcon} />
               </a>
             </li>
@@ -86,5 +113,5 @@ export function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
