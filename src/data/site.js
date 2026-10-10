@@ -6,7 +6,7 @@ export const site = {
   availability: "Available for freelance projects — remote, worldwide",
   email: "fazalabbas2002@gmail.com",
   github: "https://github.com/fazal305",
-  linkedin: "https://www.linkedin.com/in/fazal-abbas-4653dg86/",
+  linkedin: "https://www.linkedin.com/in/fazal-abbas879/",
   nav: [
     { label: "Work", href: "#work" },
     { label: "Services", href: "#services" },
@@ -27,7 +27,7 @@ export const site = {
     },
     {
       label: "LinkedIn",
-      href: "https://www.linkedin.com/in/fazal-abbas-4653dg86/",
+      href: "https://www.linkedin.com/in/fazal-abbas879/",
       icon: "linkedin",
     },
   ],
